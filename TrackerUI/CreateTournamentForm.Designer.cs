@@ -45,6 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.createTeamLinkLabel = new System.Windows.Forms.LinkLabel();
             this.createTournamentButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // deleteSelectedPlayerButton
@@ -233,6 +235,28 @@
             this.createTournamentButton.Text = "Crate Tournament";
             this.createTournamentButton.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label5.Location = new System.Drawing.Point(8, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(309, 47);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Create Tournament:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.Location = new System.Drawing.Point(12, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(236, 37);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Tournament Name";
+            // 
             // createTournamentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
@@ -254,7 +278,9 @@
             this.Controls.Add(this.deleteSelectedPlayerButton);
             this.Controls.Add(this.tournamentPlayersListbox);
             this.Controls.Add(this.teamDropDown);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.roundLabel);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.headerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
@@ -284,5 +310,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel createTeamLinkLabel;
         private System.Windows.Forms.Button createTournamentButton;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
