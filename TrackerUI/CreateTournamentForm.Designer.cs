@@ -1,6 +1,6 @@
 ﻿namespace TrackerUI
 {
-    partial class createTournamentForm
+    partial class CreateTournamentForm
     {
         /// <summary>
         /// Required designer variable.
@@ -257,7 +257,7 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Tournament Name";
             // 
-            // createTournamentForm
+            // CreateTournamentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -284,7 +284,7 @@
             this.Controls.Add(this.headerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.Name = "createTournamentForm";
+            this.Name = "CreateTournamentForm";
             this.Text = "Create Tournament";
             this.ResumeLayout(false);
             this.PerformLayout();
