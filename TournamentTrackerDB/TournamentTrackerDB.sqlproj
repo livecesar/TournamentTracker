@@ -6,7 +6,7 @@
     <Name>TournamentTrackerDB</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{ee29484d-b004-48e8-ba3d-04494dd8f4e5}</ProjectGuid>
+    <ProjectGuid>{e096c360-62ad-4d79-a41b-1fc72ed51e2e}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -56,5 +56,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Prizes.sql" />
+    <Build Include="dbo\Tables\Teams.sql" />
+    <Build Include="dbo\Tables\People.sql" />
+    <Build Include="dbo\Tables\TeamMembers.sql" />
+    <Build Include="dbo\Tables\Tournaments.sql" />
+    <Build Include="dbo\Tables\TournamentPrizes.sql" />
+    <Build Include="dbo\Tables\TournamentEntries.sql" />
+    <Build Include="dbo\Tables\Matchups.sql" />
+    <Build Include="dbo\Tables\MatchupEntries.sql" />
   </ItemGroup>
 </Project>
