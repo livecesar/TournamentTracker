@@ -15,7 +15,23 @@ namespace TrackerLibrary.DataAccess
         // TODO - Wire u´p the CreatePrize for text files
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            // Find max Id
+            //Load the file and convert to List<PrizeModel>
+            List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModels();
+
+            //Find the max Id
+            int currentId = 1;
+            if (prizes.Count > 0)
+            {
+                currentId= prizes.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+            model.Id = currentId;
+            // Add the new record with the new Id
+            prizes.Add(model);
+
+            //Convert the prizes to List<string> and saves rhe List<string> into the text file
+            prizes.SaveToPrizeFile(PrizesFile);
+
+            return model;
         }
     }
 }
