@@ -74,6 +74,9 @@
     <Build Include="dbo\Programability\StoredProcedures\spPrizes_Insert.sql" />
     <Build Include="dbo\Programability\StoredProcedures\spPrizes_GetByTournament.sql" />
     <Build Include="dbo\Programability\StoredProcedures\spPeople_Insert.sql" />
+    <Build Include="dbo\Programability\StoredProcedures\GetPerson_All.sql" />
+    <Build Include="dbo\Programability\StoredProcedures\spTeams_Insert.sql" />
+    <Build Include="dbo\Programability\StoredProcedures\spTeamMembers_Insert.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TournamentTrackerDB.publish.xml" />
