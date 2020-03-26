@@ -3,7 +3,7 @@
 	@LastName NVARCHAR(100),
 	@EmailAddress NVARCHAR(100),
 	@CellphoneNumber NVARCHAR(50),
-	@ID INT = 0 OUTPUT
+	@id INT = 0 OUTPUT
 AS
 BEGIN
 	SET NOCOUNT ON;
